@@ -65,3 +65,7 @@ docker rmi myos-buildenv -f
 * **`.gitignore`**: Specifies intentionally untracked files that Git should ignore.
 * **`linked.ld`**: Linker script used to define how the kernel binary is created in memory.
 * **`Makefile`**: Contains build rules for compiling the kernel and creating the ISO image.
+
+### For better understanding: File Structure
+![image](https://github.com/user-attachments/assets/4a608a51-5f2d-4c27-94ac-74ad6f7cdc97)
+
