@@ -11,10 +11,10 @@
 Docker Image : https://hub.docker.com/r/randomdude/gcc-cross-x86_64-elf
 
 Enter build environment:
-- Linux or MacOS: docker run --rm -it -v "$(pwd)":/root/env myos-buildenv
-- Windows (CMD): docker run --rm -it -v "%cd%":/root/env myos-buildenv
-- Windows (PowerShell): docker run --rm -it -v "${pwd}:/root/env" myos-buildenv
- // sometimes pwd doesnt work , try PWD in that case
+- Linux or MacOS: `docker run --rm -it -v "$(pwd)":/root/env mykernel-buildenv`
+- Windows (CMD): `docker run --rm -it -v "%cd%":/root/env mykernel-buildenv`
+- Windows (PowerShell): `docker run --rm -it -v "${pwd}:/root/env" mykernel-buildenv`
+  sometimes pwd doesnt work , try PWD in that case
 
 ## _**Build for x86:**_
 ```bash
@@ -35,7 +35,7 @@ qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso
 Remove the build-evironment image:
 
 ```bash
-docker rmi myos-buildenv -f
+docker rmi mykernel-buildenv -f
 ```
 
 
