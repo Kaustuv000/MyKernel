@@ -25,6 +25,8 @@ To leave the build environment, type exit.
 
 ## **Emulation in QEMU**
 
+QEMU installer link: https://qemu.weilnetz.de/w64/
+
 To run the kernel we need to type:
 ```bash
 qemu-system-x86_64 -cdrom dist/x86_64/kernel.iso
